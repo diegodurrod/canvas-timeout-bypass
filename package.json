@@ -1,0 +1,28 @@
+{
+  "name": "keepbeauty-es-bot",
+  "version": "1.0.0",
+  "description": "A way to retrieve product information",
+  "main": "src/minimal.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Diego Durán Rodríguez (https://github.com/diegodurrod/)",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diegodurrod/canvas-timeout-bypass"
+  },
+  "devDependencies": {
+    "@types/node": "^12.20.23",
+    "@types/puppeteer": "^5.4.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.2",
+    "puppeteer": "^11.0.0"
+  }
+}

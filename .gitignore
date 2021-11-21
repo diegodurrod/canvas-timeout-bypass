@@ -1,0 +1,8 @@
+.idea
+node_modules/*
+dist
+outputs/*
+!outputs/.gitkeep
+src/config/env.ts
+src/config/url.ts
+.DS_Store

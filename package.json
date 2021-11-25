@@ -1,7 +1,7 @@
 {
-  "name": "keepbeauty-es-bot",
+  "name": "canvas-timeout-bypass",
   "version": "1.0.0",
-  "description": "A way to retrieve product information",
+  "description": "A way to bypass the canvas campus timeout",
   "main": "src/minimal.ts",
   "scripts": {
     "dev": "ts-node src/index.ts",
@@ -21,7 +21,6 @@
     "typescript": "^3.9.10"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "chalk": "^4.1.2",
     "puppeteer": "^11.0.0"
   }

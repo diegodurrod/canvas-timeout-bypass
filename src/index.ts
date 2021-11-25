@@ -31,13 +31,17 @@ try {
       await doLogin(page);
       await goToModule(page);
       await showModuleTitle(page);
+      logger({
+        severity: 'warning',
+        message: `Warning: you have set the loop timeout to ${urls.TIMEOUT_IN_MINUTES} minutes`,
+      });
       setInterval(async () => {
         const action = (Math.floor(Math.random() * 2) === 0)
           ? 'previous'
           : 'next';
         await stepAction(page, action);
         await showModuleTitle(page);
-      }, 60000);
+      }, urls.TIMEOUT_IN_MINUTES * 60 * 1000);
     } catch (error) {
       await page.screenshot({ path: `outputs/${Date.now()}.png` });
       logger({severity: 'error', message: 'There was an error'});

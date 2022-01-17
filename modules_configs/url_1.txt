@@ -1,0 +1,5 @@
+export default {
+  INIT: 'https://micampus.unir.net/courses/24329/modules',
+  MODULE: 'https://micampus.unir.net/courses/24329/modules/items/410348',
+  TIMEOUT_IN_MINUTES: 3,
+}

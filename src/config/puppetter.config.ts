@@ -1,5 +1,5 @@
 export default {
-  headless: false,
+  headless: true,
   ignoreHTTPSErrors: true,
   args: [
     '--no-sandbox',

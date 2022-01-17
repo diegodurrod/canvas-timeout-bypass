@@ -42,10 +42,10 @@ try {
         await stepAction(page, action);
         await showModuleTitle(page);
       }, urls.TIMEOUT_IN_MINUTES * 60 * 1000);
-    } catch (err: unknown) {
+    } catch (error: unknown) {
       await page.screenshot({ path: `outputs/${Date.now()}.png` });
       logger({severity: 'error', message: 'There was an error'});
-      logger({severity: 'error', message: (err as Error).message});
+      logger({severity: 'error', message: (error as Error).message});
       logger({severity: 'error', message: 'Exiting'});
       process.exit(999);
     }
